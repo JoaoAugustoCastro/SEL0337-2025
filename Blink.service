@@ -1,12 +1,16 @@
 [Unit]
-Description = Blink LED
+#Primeira seção responsável pelas primerias informações de serviço e descrição de dependências
+Description = Blink LED 
+#Entrega infomação a serem mostradas na tela quando a Rasp iniciar (com [OK] na frente para indicar inicialização com sucesso)
 After = multi-user.target
 
 [Service]
+#Configurações da execução do serviço que será inicializado
 ExecStart =/home/sel/8852/blink.sh
 #ExectStop=
 user=SEL
 
 [Install]
+#descreve o comportamento da inicialização de serviço
 WantedBy = multi-user.target
-
+#informa ao systemd o grupo alvo no qual o serviço que deverá ser inicializado faz parte (ex: grupo multi-user)
