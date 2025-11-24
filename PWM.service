@@ -1,0 +1,12 @@
+[Unit]
+Description = PWM LED
+After=multi-user.target
+
+[Service] 
+ExecStart=/bin/python3  /home/sel/8852/pwm_led.py
+#ExecStop=
+user=SEL
+
+[Install]
+WantedBy = multi-user.target
+
