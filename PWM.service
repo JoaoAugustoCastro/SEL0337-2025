@@ -1,12 +1,16 @@
 [Unit]
+#primeira seção reponsável pelas informações  do serviço e descrição do serviço e descrição de suas dependências
 Description = PWM LED
+# entrega essa informação que será escrita na tela da Rasp ao iniciar (com [OK] para indicar inicialização realizada com sucesso)
 After=multi-user.target
 
-[Service] 
+[Service]
+#configurações de serviço a ser inicializado
 ExecStart=/bin/python3  /home/sel/8852/pwm_led.py
 #ExecStop=
 user=SEL
 
 [Install]
+#descreve o comportamento da inicialização do serviço
 WantedBy = multi-user.target
-
+#informa ao systemd o grupo alvo no qual o serviço que deverá ser inicializado faz parte (ex: grupo multi-user)
