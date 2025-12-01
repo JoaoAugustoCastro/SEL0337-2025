@@ -32,5 +32,5 @@ selecionado um programa para gpio em python criado em práticas anteriores. O pr
 controlar sua intensidade gradualmente.
 
 Abaixo, segue a imagem do circuito utilizado para ambos os circuitos: 
-![Imagem](Circuito entrega 5.jpeg)
+![Imagem](Circuito_entrega_5.jpeg)
 
