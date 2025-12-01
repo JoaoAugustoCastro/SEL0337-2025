@@ -30,3 +30,7 @@ Para desabilitar o serviço no "boot", basta utilizar "sudo systemctl disable bl
 Posteriormente, foi utilizado outro código para execução durante a inicialização do sistema (substituindo o blink). Para isso, foi
 selecionado um programa para gpio em python criado em práticas anteriores. O programa "pwm_led" altera o nível de pwm do led para 
 controlar sua intensidade gradualmente.
+
+Abaixo, segue a imagem do circuito utilizado para ambos os circuitos: 
+![minha imagem](Circuito entrega 5.jpg)
+
